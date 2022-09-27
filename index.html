@@ -1,0 +1,172 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Language" content="ja">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="keywords" content="姫路市教職員組合,姫教組,姫路,姫路市,姫路市教育会館,教育">
+    <meta name="description" content="みなさん、姫路市教職員組合（略称：姫教組）のホームページにようこそいらっしゃいました。わたしたち姫教組は、姫路市立の小中義務教育特別支援学校に勤務する教職員のほとんどの方が加入している組合です。">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>姫路市教職員組合</title>
+    <link type="text/css" rel="stylesheet" href="css/base.css" media="screen and (min-width: 641px)">
+    <link type="text/css" rel="stylesheet" href="css/sp.css" media="screen and (max-width: 640px)">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        
+        jQuery(function($) {
+          
+        var nav    = $('#fixedBox'),
+            offset = nav.offset();
+          
+        $(window).scroll(function () {
+          if($(window).scrollTop() > offset.top) {
+            nav.addClass('fixed');
+          } else {
+            nav.removeClass('fixed');
+          }
+        });
+        });
+    
+        $(function() {
+        $(".sgnav").css("display","none");
+        $(".mbtn").on("click", function() {
+            if($(this).hasClass('attr')){
+                $(this).attr('src', 'img/open.png');
+                $(this).removeClass('attr');
+            
+            }else {
+                $(this).attr('src', 'img/close.png');
+                $(this).addClass('attr');
+            }
+            
+            $(".sgnav").slideToggle();
+            });
+        });
+
+        $(window).on("scroll", function(){
+            $(".fixed").css("left", -$(window).scrollLeft());
+        });
+
+
+    </script>
+</head>
+<body>
+
+    <div id ="fixedBox">
+        <div id ="gnavarea">
+        <div id="gnav">
+            <ul class = "gnav_ul">
+                <li>
+                    <a class="Btn" href="index.html" title="HOME">
+                        <span class="Btn-Text">HOME<br>
+                            <span class ="jfont">ホーム</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="Btn" href="about/index.html" title="ABOUT">
+                        <span class="Btn-Text">ABOUT<br>
+                            <span class ="jfont">組合について</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="Btn" href="memver/index.html" title="組合員専用">
+                        <span class="Btn-Text">MEMBERS<br>
+                            <span class ="jfont">組合員専用</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="Btn" href="access/index.html" title="ACCESS">
+                        <span class="Btn-Text">ACCESS<br>
+                            <span class ="jfont">アクセス</span>
+                        </span>
+                    </a>
+                </li> 
+            </ul>
+
+            <img src ="img/open.png" class="mbtn">
+            
+            <div class="clearboth"><hr></div>
+        </div>
+    </div>    
+    </div>
+
+    <div id = "snavarea">
+        <div class="sgnav">
+            <ul class = "gnav_ul">
+                <li>
+                    <a class="Btn" href="index.html" title="HOME">
+                        <span class="Btn-Text">HOME<br>
+                            <span class ="jfont">ホーム</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="Btn" href="about/index.html" title="ABOUT">
+                        <span class="Btn-Text">ABOUT<br>
+                            <span class ="jfont">組合について</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="Btn" href="memver/index.html" title="組合員専用">
+                        <span class="Btn-Text">MEMBERS<br>
+                            <span class ="jfont">組合員専用</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="Btn" href="access/index.html" title="ACCESS">
+                        <span class="Btn-Text">ACCESS<br>
+                            <span class ="jfont">アクセス</span>
+                        </span>
+                    </a>
+                </li> 
+            </ul>
+        </div>
+    </div>
+    
+    <div class ="photo">
+        <img src="img/photo.png">
+    </div>
+
+    <div class="SlideInLeft">
+        <div id="main">
+
+            <div id="area">
+
+                <div class ="item">
+                    <div class ="title">&nbsp;&nbsp;ようこそ姫路市教職員組合ホームページへ</div><br>
+                    <div class="contents">
+                        　姫路市教職員組合のホームページにようこそ。<br>
+                        　私たち姫路市教職員組合（略称：姫教組）は、1947年の結成当初から、教職員の生活と
+                        労働条件の改善とともに、教育環境整備・教育内容の充実を運動の中心課題にすえ、子どもたち
+                        一人ひとりが主役として輝ける教育の実現をめざして教育改革にとりくんできました。<br>
+                        　これからも人権・平和・民主主義を守り、「参加・提言・協議・改革」の立場から、
+                        子どもの視点に立った運動をすすめていきます。<br>
+                        　みなさん、どうぞよろしくお願いいたします。
+                    </div><br>
+                </div>
+
+
+            </div>
+          
+            <div class="clearboth"><hr></div>
+
+        </div>
+    
+    </div>   
+    <div class="clearboth"><hr></div>
+
+    
+        <div id="footer">
+            <div id="footerbox"> Copyright © Himeji city teachers' union All Rights Reserved.</div>
+        </div>
+       
+  
+</body>
+</html>
